@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成功以蓝牙方式连接"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/bsend_down" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/bsend_down"
+        android:layout_alignLeft="@+id/bsend_down"
+        android:layout_alignStart="@+id/bsend_down"
+        android:layout_marginBottom="14dp"
+        android:text="上"
+        android:id="@+id/bsend_up"/>
+
+    <Button
+        android:id="@+id/bsend_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bsend_down"
+        android:layout_alignBottom="@+id/bsend_down"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="右" />
+
+    <Button
+        android:id="@+id/bsend_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bsend_right"
+        android:layout_alignBottom="@+id/bsend_right"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@+id/bsend_right"
+        android:layout_toStartOf="@+id/bsend_right"
+        android:text="左" />
+</RelativeLayout>
